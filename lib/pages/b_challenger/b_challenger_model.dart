@@ -3,15 +3,9 @@ import '/components/actionbutton_interactive_widget.dart';
 import '/components/cardprofile_widget.dart';
 import '/components/clbavatar_widget.dart';
 import '/components/header_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'b_challenger_widget.dart' show BChallengerWidget;
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class BChallengerModel extends FlutterFlowModel<BChallengerWidget> {
   ///  State fields for stateful widgets in this page.

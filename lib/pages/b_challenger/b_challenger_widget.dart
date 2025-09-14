@@ -118,9 +118,9 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
           title: wrapWithModel(
             model: _model.headerModel,
             updateCallback: () => safeSetState(() {}),
-            child: HeaderWidget(),
+            child: const HeaderWidget(),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -133,7 +133,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                     Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 1072.5,
                             height: 733.5,
@@ -146,7 +146,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                 Column(
                                   children: [
                                     Align(
-                                      alignment: Alignment(0.0, 0),
+                                      alignment: const Alignment(0.0, 0),
                                       child: TabBar(
                                         labelColor: FlutterFlowTheme.of(context)
                                             .primaryText,
@@ -203,7 +203,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                         indicatorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                        tabs: [
+                                        tabs: const [
                                           Tab(
                                             text: 'Giao lưu',
                                           ),
@@ -236,7 +236,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: wrapWithModel(
                                                         model: _model
@@ -244,14 +244,14 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
                                                         child:
-                                                            CardprofileWidget(),
+                                                            const CardprofileWidget(),
                                                       ),
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.01),
                                                 child: Container(
                                                   width: 393.3,
@@ -265,7 +265,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 1.0),
                                                         child: Container(
                                                           width: 368.0,
@@ -288,7 +288,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ClbavatarWidget(),
+                                                                    const ClbavatarWidget(),
                                                               ),
                                                             ],
                                                           ),
@@ -298,7 +298,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.99, 1.0),
                                                             child: Container(
                                                               width: 70.1,
@@ -317,7 +317,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ActionbuttonInteractiveWidget(),
+                                                                    const ActionbuttonInteractiveWidget(),
                                                               ),
                                                             ),
                                                           ),
@@ -338,12 +338,12 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ActionbutonChallengerWidget(),
+                                                                  const ActionbutonChallengerWidget(),
                                                             ),
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.56,
                                                                     0.55),
                                                             child: Container(
@@ -357,7 +357,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -390,7 +390,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.63,
                                                                     0.99),
                                                             child: Container(
@@ -456,7 +456,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: wrapWithModel(
                                                             model: _model
@@ -465,12 +465,12 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                 safeSetState(
                                                                     () {}),
                                                             child:
-                                                                CardprofileWidget(),
+                                                                const CardprofileWidget(),
                                                           ),
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -0.01, 0.85),
                                                           child: Container(
                                                             width: 418.9,
@@ -483,7 +483,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                             ),
                                                             child: Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       0.0),
                                                               child: Stack(
@@ -518,7 +518,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                                 color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                               ),
                                                                               child: Align(
-                                                                                alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                 child: Text(
                                                                                   'T7 - 06/09 \n19:00',
                                                                                   textAlign: TextAlign.center,
@@ -562,7 +562,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                                 color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                               ),
                                                                               child: Align(
-                                                                                alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                 child: Text(
                                                                                   'Race to 7',
                                                                                   textAlign: TextAlign.center,
@@ -580,7 +580,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                          ].divide(SizedBox(width: 8.0)),
+                                                                          ].divide(const SizedBox(width: 8.0)),
                                                                         ),
                                                                       ),
                                                                     ],
@@ -596,7 +596,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                 ],
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.01),
                                                 child: Container(
                                                   width: 393.3,
@@ -608,7 +608,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 1.01),
                                                     child: Container(
                                                       width: 393.3,
@@ -622,7 +622,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 1.0),
                                                             child: Container(
                                                               width: 368.0,
@@ -645,7 +645,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        ClbavatarWidget(),
+                                                                        const ClbavatarWidget(),
                                                                   ),
                                                                 ],
                                                               ),
@@ -655,7 +655,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.99,
                                                                         1.0),
                                                                 child:
@@ -676,7 +676,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                         safeSetState(
                                                                             () {}),
                                                                     child:
-                                                                        ActionbuttonInteractiveWidget(),
+                                                                        const ActionbuttonInteractiveWidget(),
                                                                   ),
                                                                 ),
                                                               ),
@@ -697,12 +697,12 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                       safeSetState(
                                                                           () {}),
                                                                   child:
-                                                                      ActionbutonChallengerWidget(),
+                                                                      const ActionbutonChallengerWidget(),
                                                                 ),
                                                               ),
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -0.56,
                                                                         0.55),
                                                                 child:
@@ -717,7 +717,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                                   ),
                                                                   child: Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             0.0),
                                                                     child: Text(
@@ -746,7 +746,7 @@ class _BChallengerWidgetState extends State<BChallengerWidget>
                                                               ),
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -0.63,
                                                                         0.99),
                                                                 child:

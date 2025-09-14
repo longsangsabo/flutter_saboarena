@@ -70,12 +70,12 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                   RankingsRecord.collection
                       .where(
                         'club_id',
-                        isEqualTo: widget!.clubId != '' ? widget!.clubId : null,
+                        isEqualTo: widget.clubId != '' ? widget.clubId : null,
                       )
                       .where(
                         'ranking_criteria',
-                        isEqualTo: widget!.rankingCriteria != ''
-                            ? widget!.rankingCriteria
+                        isEqualTo: widget.rankingCriteria != ''
+                            ? widget.rankingCriteria
                             : null,
                       )
                       .orderBy('score', descending: true),
@@ -83,7 +83,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                 padding: EdgeInsets.zero,
                 reverse: false,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                 builderDelegate: PagedChildBuilderDelegate<RankingsRecord>(
                   // Customize what your widget looks like when it's loading the first page.
                   firstPageProgressIndicatorBuilder: (_) => Center(
@@ -122,7 +122,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                         context.pushNamed(
                           EUserProfileWidget.routeName,
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.rightToLeft,
                             ),
@@ -136,7 +136,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10.0),
                         ),
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -180,7 +180,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                             ),
                             Flexible(
                               child: Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -233,7 +233,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
                             ),
@@ -275,7 +275,7 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: FaIcon(
                                       FontAwesomeIcons.khanda,
                                       color: FlutterFlowTheme.of(context)
@@ -284,9 +284,9 @@ class _ListleaderboardWidgetState extends State<ListleaderboardWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 4.0)),
+                              ].divide(const SizedBox(height: 4.0)),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                       ),
                     );

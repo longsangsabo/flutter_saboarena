@@ -20,8 +20,8 @@ class ListchallengerWidget extends StatefulWidget {
     String? status,
     String? filterBy,
     this.userId,
-  })  : this.status = status ?? 'scheduled, ongoing, finished',
-        this.filterBy = filterBy ?? 'club, user';
+  })  : status = status ?? 'scheduled, ongoing, finished',
+        filterBy = filterBy ?? 'club, user';
 
   final String? clubId;
   final String status;
@@ -68,20 +68,20 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                   MatchesRecord.collection
                       .where(
                         'club_id',
-                        isEqualTo: widget!.clubId,
-                        isNull: (widget!.clubId) == null,
+                        isEqualTo: widget.clubId,
+                        isNull: (widget.clubId) == null,
                       )
                       .where(
                         'status',
-                        isEqualTo: widget!.status,
-                        isNull: (widget!.status) == null,
+                        isEqualTo: widget.status,
+                        isNull: (widget.status) == null,
                       )
                       .orderBy('scheduled_time', descending: true),
                 ),
                 padding: EdgeInsets.zero,
                 reverse: false,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                 builderDelegate: PagedChildBuilderDelegate<MatchesRecord>(
                   // Customize what your widget looks like when it's loading the first page.
                   firstPageProgressIndicatorBuilder: (_) => Center(
@@ -112,7 +112,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                     final listViewMatchesRecord = _model
                         .listViewPagingController!.itemList![listViewIndex];
                     return Padding(
-                      padding: EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -122,7 +122,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                           context.pushNamed(
                             EUserProfileWidget.routeName,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                               ),
@@ -132,7 +132,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                         child: Container(
                           width: double.infinity,
                           height: 204.27,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
@@ -141,7 +141,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
@@ -154,12 +154,12 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                               ),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -261,7 +261,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                                 .fontStyle,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ],
                                     ),
@@ -274,7 +274,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                           .secondaryBackground,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -282,7 +282,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                         children: [
                                           Flexible(
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
@@ -292,7 +292,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                   Flexible(
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, -1.0),
                                                       child: Container(
                                                         height: 27.17,
@@ -308,7 +308,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   8.0),
                                                           child: Text(
                                                             'READY',
@@ -353,7 +353,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, -1.0),
                                                     child:
                                                         SingleChildScrollView(
@@ -370,7 +370,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, -1.0),
                                                             child: Text(
                                                               'T7 - 06/09',
@@ -545,7 +545,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                                           .fontStyle,
                                                                     ),
                                                               ),
-                                                            ].divide(SizedBox(
+                                                            ].divide(const SizedBox(
                                                                 width: 16.0)),
                                                           ),
                                                         ],
@@ -645,7 +645,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                               ),
                                                         ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ),
                                                   Text(
@@ -716,7 +716,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                                   .fontStyle,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 2.0)),
+                                                ].divide(const SizedBox(height: 2.0)),
                                               ),
                                             ),
                                           ),
@@ -725,7 +725,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -827,7 +827,7 @@ class _ListchallengerWidgetState extends State<ListchallengerWidget> {
                                                                 .fontStyle,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ],
                                     ),

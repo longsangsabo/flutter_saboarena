@@ -45,7 +45,7 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Padding(
-          padding: EdgeInsets.all(6.0),
+          padding: const EdgeInsets.all(6.0),
           child: Container(
             width: 400.4,
             height: 322.9,
@@ -88,7 +88,7 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.04, -0.05),
+                      alignment: const AlignmentDirectional(0.04, -0.05),
                       child: Container(
                         width: 230.0,
                         height: 230.0,
@@ -113,7 +113,7 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Container(
                         width: 259.6,
                         height: 39.66,
@@ -121,11 +121,11 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
-                        alignment: AlignmentDirectional(0.0, 1.0),
+                        alignment: const AlignmentDirectional(0.0, 1.0),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 1.0),
+                          alignment: const AlignmentDirectional(0.0, 1.0),
                           child: Padding(
-                            padding: EdgeInsets.all(6.0),
+                            padding: const EdgeInsets.all(6.0),
                             child: Text(
                               valueOrDefault<String>(
                                 columnUsersRecord?.displayName,
@@ -164,22 +164,22 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(-0.01, 0.42),
+                        alignment: const AlignmentDirectional(-0.01, 0.42),
                         child: Container(
                           width: 120.0,
                           height: 36.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFF6B46C1),
+                            color: const Color(0xFF6B46C1),
                             borderRadius: BorderRadius.circular(18.0),
                           ),
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.shield,
                                   color: Colors.white,
                                   size: 16.0,
@@ -229,7 +229,7 @@ class _CardprofileWidgetState extends State<CardprofileWidget> {
                                             .fontStyle,
                                       ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                         ),

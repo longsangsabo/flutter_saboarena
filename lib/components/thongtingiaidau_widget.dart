@@ -43,17 +43,17 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
     return Stack(
       children: [
         Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xFF4A5568),
+                color: const Color(0xFF4A5568),
                 borderRadius: BorderRadius.circular(24.0),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: SingleChildScrollView(
                   primary: false,
                   child: Column(
@@ -98,7 +98,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFFA0AEC0),
+                                  color: const Color(0xFFA0AEC0),
                                   fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
@@ -122,7 +122,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                     .bodyMedium
                                     .fontStyle,
                               ),
-                              color: Color(0xFFA0AEC0),
+                              color: const Color(0xFFA0AEC0),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
@@ -140,7 +140,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.emoji_events,
                                 color: Color(0xFFFFD700),
                                 size: 20.0,
@@ -169,7 +169,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '9-Ball',
@@ -195,7 +195,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                       .fontStyle,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -204,7 +204,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.group,
                                 color: Color(0xFF4299E1),
                                 size: 20.0,
@@ -233,18 +233,18 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Container(
                             height: 32.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF38A169),
+                              color: const Color(0xFF38A169),
                               borderRadius: BorderRadius.circular(16.0),
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 4.0, 12.0, 4.0),
                                 child: Text(
                                   'Còn 16 chỗ',
@@ -275,7 +275,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -284,7 +284,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.star,
                                 color: Color(0xFF9F7AEA),
                                 size: 20.0,
@@ -313,7 +313,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             'Hạng K → Hạng G+',
@@ -328,7 +328,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF9F7AEA),
+                                  color: const Color(0xFF9F7AEA),
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -338,7 +338,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                       .fontStyle,
                                 ),
                           ),
-                        ].divide(SizedBox(width: 16.0)),
+                        ].divide(const SizedBox(width: 16.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -421,7 +421,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .bodySmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFFFD700),
+                                    color: const Color(0xFFFFD700),
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -441,7 +441,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .displaySmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFFFFD700),
+                                    color: const Color(0xFFFFD700),
                                     fontSize: 28.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -460,7 +460,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.schedule,
                                 color: Color(0xFFA0AEC0),
                                 size: 16.0,
@@ -478,7 +478,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                             .bodySmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFFA0AEC0),
+                                      color: const Color(0xFFA0AEC0),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -488,12 +488,12 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.location_on,
                                 color: Color(0xFFA0AEC0),
                                 size: 16.0,
@@ -511,7 +511,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                             .bodySmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFFA0AEC0),
+                                      color: const Color(0xFFA0AEC0),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -521,12 +521,12 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.access_time,
                                 color: Color(0xFFA0AEC0),
                                 size: 16.0,
@@ -544,7 +544,7 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                             .bodySmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFFA0AEC0),
+                                      color: const Color(0xFFA0AEC0),
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -554,11 +554,11 @@ class _ThongtingiaidauWidgetState extends State<ThongtingiaidauWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
-                        ].divide(SizedBox(height: 8.0)),
+                        ].divide(const SizedBox(height: 8.0)),
                       ),
-                    ].divide(SizedBox(height: 6.0)),
+                    ].divide(const SizedBox(height: 6.0)),
                   ),
                 ),
               ),

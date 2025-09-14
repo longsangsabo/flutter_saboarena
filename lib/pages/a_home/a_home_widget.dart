@@ -117,9 +117,9 @@ class _AHomeWidgetState extends State<AHomeWidget>
           title: wrapWithModel(
             model: _model.headerModel,
             updateCallback: () => safeSetState(() {}),
-            child: HeaderWidget(),
+            child: const HeaderWidget(),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -132,7 +132,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                     Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 1072.5,
                             height: 733.5,
@@ -145,7 +145,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                 Column(
                                   children: [
                                     Align(
-                                      alignment: Alignment(0.0, 0),
+                                      alignment: const Alignment(0.0, 0),
                                       child: TabBar(
                                         labelColor: FlutterFlowTheme.of(context)
                                             .primaryText,
@@ -202,7 +202,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                         indicatorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                        tabs: [
+                                        tabs: const [
                                           Tab(
                                             text: 'Lân cận',
                                           ),
@@ -235,7 +235,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: wrapWithModel(
                                                         model: _model
@@ -243,14 +243,14 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                         updateCallback: () =>
                                                             safeSetState(() {}),
                                                         child:
-                                                            CardprofileWidget(),
+                                                            const CardprofileWidget(),
                                                       ),
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.01),
                                                 child: Container(
                                                   width: 393.3,
@@ -264,7 +264,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 1.0),
                                                         child: Container(
                                                           width: 367.64,
@@ -287,7 +287,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ClbavatarWidget(),
+                                                                    const ClbavatarWidget(),
                                                               ),
                                                             ],
                                                           ),
@@ -297,7 +297,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.99, 1.0),
                                                             child: Container(
                                                               width: 70.1,
@@ -316,7 +316,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ActionbuttonInteractiveWidget(),
+                                                                    const ActionbuttonInteractiveWidget(),
                                                               ),
                                                             ),
                                                           ),
@@ -337,12 +337,12 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ActionbutonChallengerWidget(),
+                                                                  const ActionbutonChallengerWidget(),
                                                             ),
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.56,
                                                                     0.55),
                                                             child: Container(
@@ -356,7 +356,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -389,7 +389,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.63,
                                                                     0.99),
                                                             child: Container(
@@ -438,7 +438,7 @@ class _AHomeWidgetState extends State<AHomeWidget>
                                               ),
                                             ],
                                           ),
-                                          Column(
+                                          const Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [],
                                           ),

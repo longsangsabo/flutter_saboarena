@@ -52,12 +52,12 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
         ),
       ),
       child: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -127,7 +127,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                   .fontStyle,
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ],
               ),
@@ -139,21 +139,21 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Flexible(
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Flexible(
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: Container(
                                   height: 27.17,
                                   decoration: BoxDecoration(
@@ -161,7 +161,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                     borderRadius: BorderRadius.circular(14.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       'READY',
                                       textAlign: TextAlign.justify,
@@ -197,7 +197,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: SingleChildScrollView(
                                 primary: false,
                                 child: Column(
@@ -207,7 +207,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.0, -1.0),
+                                          const AlignmentDirectional(0.0, -1.0),
                                       child: Text(
                                         'T7 - 06/09',
                                         textAlign: TextAlign.center,
@@ -368,7 +368,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 16.0)),
+                                      ].divide(const SizedBox(width: 16.0)),
                                     ),
                                   ],
                                 ),
@@ -445,7 +445,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                             ),
                             Text(
@@ -494,7 +494,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                         .fontStyle,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 2.0)),
+                          ].divide(const SizedBox(height: 2.0)),
                         ),
                       ),
                     ),
@@ -503,7 +503,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -573,7 +573,7 @@ class _CardchallengerWidgetState extends State<CardchallengerWidget> {
                                   .fontStyle,
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ],
               ),

@@ -213,10 +213,10 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                       wrapWithModel(
                         model: _model.cardprofileModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: CardprofileWidget(),
+                        child: const CardprofileWidget(),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 1.53),
+                        alignment: const AlignmentDirectional(0.0, 1.53),
                         child: Container(
                           width: 393.5,
                           height: 362.6,
@@ -227,7 +227,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                           child: Column(
                             children: [
                               Align(
-                                alignment: Alignment(0.0, 0),
+                                alignment: const Alignment(0.0, 0),
                                 child: TabBar(
                                   labelColor:
                                       FlutterFlowTheme.of(context).primaryText,
@@ -283,7 +283,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                           ),
                                   indicatorColor:
                                       FlutterFlowTheme.of(context).primary,
-                                  tabs: [
+                                  tabs: const [
                                     Tab(
                                       text: 'Giải đấu',
                                     ),
@@ -314,7 +314,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                             model: _model.listtournamnetModel,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: ListtournamnetWidget(
+                                            child: const ListtournamnetWidget(
                                               clubid: 'club_id',
                                             ),
                                           ),
@@ -334,7 +334,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                             model: _model.listchallengerModel,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: ListchallengerWidget(
+                                            child: const ListchallengerWidget(
                                               clubId: 'club_id',
                                             ),
                                           ),
@@ -349,7 +349,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.07),
+                        alignment: const AlignmentDirectional(0.0, 0.07),
                         child: Container(
                           width: 404.6,
                           height: 68.6,
@@ -358,11 +358,11 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                 .secondaryBackground,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: GridView(
                               padding: EdgeInsets.zero,
                               gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 4,
                                 crossAxisSpacing: 12.0,
                                 mainAxisSpacing: 12.0,
@@ -375,7 +375,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.emoji_events,
                                       color: Color(0xFFFFD700),
                                       size: 24.0,
@@ -424,7 +424,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -479,12 +479,12 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.trending_up,
                                       color: Color(0xFF4ADE80),
                                       size: 24.0,
@@ -533,12 +533,12 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.all_inclusive,
                                       color: Color(0xFFEF4444),
                                       size: 24.0,
@@ -587,7 +587,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ],
                             ),
@@ -597,7 +597,7 @@ class _EUserProfileWidgetState extends State<EUserProfileWidget>
                     ],
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.63, -0.32),
+                    alignment: const AlignmentDirectional(0.63, -0.32),
                     child: Container(
                       width: 32.0,
                       height: 32.0,

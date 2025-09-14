@@ -41,9 +41,9 @@ class _ClbavatarWidgetState extends State<ClbavatarWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.77),
+      alignment: const AlignmentDirectional(0.0, 0.77),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
         child: Container(
           width: double.infinity,
           height: 65.3,
@@ -51,7 +51,7 @@ class _ClbavatarWidgetState extends State<ClbavatarWidget> {
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -67,12 +67,12 @@ class _ClbavatarWidgetState extends State<ClbavatarWidget> {
                     ),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(2.0),
+                    padding: const EdgeInsets.all(2.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(6.0),
                       child: CachedNetworkImage(
-                        fadeInDuration: Duration(milliseconds: 500),
-                        fadeOutDuration: Duration(milliseconds: 500),
+                        fadeInDuration: const Duration(milliseconds: 500),
+                        fadeOutDuration: const Duration(milliseconds: 500),
                         imageUrl:
                             'https://images.unsplash.com/photo-1606247357835-d27fe83fc6a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw0fHxzdGFycnklMjBuaWdodHxlbnwwfHx8fDE3NTc0NTk4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
                         width: 40.0,
@@ -85,7 +85,7 @@ class _ClbavatarWidgetState extends State<ClbavatarWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -113,7 +113,7 @@ class _ClbavatarWidgetState extends State<ClbavatarWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
                             'Vũng tàu',

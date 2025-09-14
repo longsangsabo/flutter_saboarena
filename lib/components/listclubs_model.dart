@@ -24,7 +24,9 @@ class ListclubsModel extends FlutterFlowModel<ListclubsWidget> {
 
   @override
   void dispose() {
-    listViewStreamSubscriptions.forEach((s) => s?.cancel());
+    for (var s in listViewStreamSubscriptions) {
+      s?.cancel();
+    }
     listViewPagingController?.dispose();
   }
 

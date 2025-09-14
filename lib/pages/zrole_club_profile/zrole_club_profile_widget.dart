@@ -179,11 +179,11 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
+                                            alignment: const AlignmentDirectional(
                                                 0.04, -0.05),
                                             child: Container(
                                               width: 250.0,
@@ -208,7 +208,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             1.13, 1.12),
                                                     child: Container(
                                                       width: 32.0,
@@ -244,7 +244,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         'SABO Billiards',
                                         textAlign: TextAlign.center,
@@ -274,27 +274,27 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                             ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(height: 16.0)),
+                                  ].divide(const SizedBox(height: 16.0)),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 24.0))
-                                  .addToStart(SizedBox(height: 16.0))
-                                  .addToEnd(SizedBox(height: 24.0)),
+                                  .divide(const SizedBox(height: 24.0))
+                                  .addToStart(const SizedBox(height: 16.0))
+                                  .addToEnd(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ],
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.14),
+                        alignment: const AlignmentDirectional(0.0, 0.14),
                         child: Container(
                           height: 56.08,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 1.0),
+                            alignment: const AlignmentDirectional(0.0, 1.0),
                             child: GridView(
                               padding: EdgeInsets.zero,
                               gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 4,
                                 crossAxisSpacing: 1.0,
                                 childAspectRatio: 1.2,
@@ -304,7 +304,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                               scrollDirection: Axis.vertical,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -358,12 +358,12 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 7.0)),
+                                      ].divide(const SizedBox(height: 7.0)),
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -417,12 +417,12 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 7.0)),
+                                      ].divide(const SizedBox(height: 7.0)),
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -476,12 +476,12 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 7.0)),
+                                      ].divide(const SizedBox(height: 7.0)),
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -535,7 +535,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 7.0)),
+                                      ].divide(const SizedBox(height: 7.0)),
                                     ),
                                   ),
                                 ),
@@ -545,7 +545,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, -0.02),
+                        alignment: const AlignmentDirectional(0.0, -0.02),
                         child: Container(
                           width: 399.4,
                           height: 27.1,
@@ -554,13 +554,13 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                 .secondaryBackground,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Align(
+                                const Align(
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.location_on,
@@ -569,7 +569,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     '60A Nguyễn An Ninh - TP Vũng Tàu',
                                     style: FlutterFlowTheme.of(context)
@@ -594,7 +594,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                         ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                         ),
@@ -604,7 +604,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.64),
+                alignment: const AlignmentDirectional(0.0, 1.64),
                 child: Container(
                   width: 393.5,
                   height: 370.0,
@@ -614,7 +614,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: TabBar(
                           labelColor: FlutterFlowTheme.of(context).primaryText,
                           unselectedLabelColor:
@@ -658,7 +658,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                         .fontStyle,
                                   ),
                           indicatorColor: FlutterFlowTheme.of(context).primary,
-                          tabs: [
+                          tabs: const [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -732,7 +732,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                               child: wrapWithModel(
                                 model: _model.listmenberModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: ListmenberWidget(
+                                child: const ListmenberWidget(
                                   clubid: 'club_id',
                                   status: 'active',
                                 ),
@@ -740,7 +740,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                             ),
                             Stack(
                               children: [
-                                Column(
+                                const Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [],
                                 ),
@@ -754,7 +754,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                   child: wrapWithModel(
                                     model: _model.listtournamnetModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: ListtournamnetWidget(
+                                    child: const ListtournamnetWidget(
                                       clubid: 'club_id',
                                     ),
                                   ),
@@ -774,7 +774,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                   child: wrapWithModel(
                                     model: _model.listleaderboardModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: ListleaderboardWidget(
+                                    child: const ListleaderboardWidget(
                                       clubId: 'club_id',
                                       rankingCriteria: 'ranking_criteria',
                                     ),
@@ -795,7 +795,7 @@ class _ZroleClubProfileWidgetState extends State<ZroleClubProfileWidget>
                                   child: wrapWithModel(
                                     model: _model.listchallengerModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: ListchallengerWidget(
+                                    child: const ListchallengerWidget(
                                       clubId: 'club_id',
                                       userId: 'user_id',
                                     ),

@@ -17,7 +17,7 @@ class ListmenberWidget extends StatefulWidget {
     super.key,
     String? clubid,
     required this.status,
-  }) : this.clubid = clubid ?? 'Chưa có thành viên nào ';
+  }) : clubid = clubid ?? 'Chưa có thành viên nào ';
 
   /// ID của CLB để filter danh sách member
   final String clubid;
@@ -71,17 +71,17 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                   ClubMembersRecord.collection
                       .where(
                         'club_id',
-                        isEqualTo: widget!.clubid != '' ? widget!.clubid : null,
+                        isEqualTo: widget.clubid != '' ? widget.clubid : null,
                       )
                       .where(
                         'status',
-                        isEqualTo: widget!.status != '' ? widget!.status : null,
+                        isEqualTo: widget.status != '' ? widget.status : null,
                       ),
                 ),
                 padding: EdgeInsets.zero,
                 reverse: false,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                 builderDelegate: PagedChildBuilderDelegate<ClubMembersRecord>(
                   // Customize what your widget looks like when it's loading the first page.
                   firstPageProgressIndicatorBuilder: (_) => Center(
@@ -112,7 +112,7 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                     final listViewClubMembersRecord = _model
                         .listViewPagingController!.itemList![listViewIndex];
                     return Padding(
-                      padding: EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -122,7 +122,7 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                           context.pushNamed(
                             EUserProfileWidget.routeName,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                               ),
@@ -132,7 +132,7 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                         child: Container(
                           width: double.infinity,
                           height: 60.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
@@ -141,7 +141,7 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -221,10 +221,10 @@ class _ListmenberWidgetState extends State<ListmenberWidget> {
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                  ].divide(const SizedBox(height: 4.0)),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                         ),
                       ),

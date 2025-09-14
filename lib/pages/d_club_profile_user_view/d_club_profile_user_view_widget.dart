@@ -75,9 +75,9 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
           title: wrapWithModel(
             model: _model.headerModel,
             updateCallback: () => safeSetState(() {}),
-            child: HeaderWidget(),
+            child: const HeaderWidget(),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -86,7 +86,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
           child: Column(
             children: [
               Align(
-                alignment: Alignment(0.0, 0),
+                alignment: const Alignment(0.0, 0),
                 child: TabBar(
                   labelColor: FlutterFlowTheme.of(context).primaryText,
                   unselectedLabelColor:
@@ -126,7 +126,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                             FlutterFlowTheme.of(context).titleMedium.fontStyle,
                       ),
                   indicatorColor: FlutterFlowTheme.of(context).primary,
-                  tabs: [
+                  tabs: const [
                     Tab(
                       text: 'CLB ',
                     ),
@@ -159,11 +159,11 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                               child: wrapWithModel(
                                 model: _model.cardclbModel,
                                 updateCallback: () => safeSetState(() {}),
-                                child: CardclbWidget(),
+                                child: const CardclbWidget(),
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Container(
                                 width: 394.2,
                                 height: 68.35,
@@ -171,16 +171,16 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                 ),
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: wrapWithModel(
                                   model: _model.infoClubModel,
                                   updateCallback: () => safeSetState(() {}),
-                                  child: InfoClubWidget(),
+                                  child: const InfoClubWidget(),
                                 ),
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 2.27),
+                              alignment: const AlignmentDirectional(0.0, 2.27),
                               child: Container(
                                 width: 398.2,
                                 height: 350.0,
@@ -191,7 +191,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                 child: Column(
                                   children: [
                                     Align(
-                                      alignment: Alignment(0.0, 0),
+                                      alignment: const Alignment(0.0, 0),
                                       child: TabBar(
                                         labelColor: FlutterFlowTheme.of(context)
                                             .primaryText,
@@ -250,7 +250,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                         indicatorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                        tabs: [
+                                        tabs: const [
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
@@ -331,7 +331,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                                 model: _model.listmenberModel,
                                                 updateCallback: () =>
                                                     safeSetState(() {}),
-                                                child: ListmenberWidget(
+                                                child: const ListmenberWidget(
                                                   status: 'active',
                                                 ),
                                               ),
@@ -349,7 +349,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                               model: _model.listtournamnetModel,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ListtournamnetWidget(
+                                              child: const ListtournamnetWidget(
                                                 clubid: 'club_id',
                                               ),
                                             ),
@@ -367,7 +367,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                                   _model.listleaderboardModel,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ListleaderboardWidget(
+                                              child: const ListleaderboardWidget(
                                                 clubId: 'club_id',
                                                 rankingCriteria:
                                                     'ranking_criteria',
@@ -386,7 +386,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                                               model: _model.listchallengerModel,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: ListchallengerWidget(
+                                              child: const ListchallengerWidget(
                                                 clubId: 'club_id',
                                               ),
                                             ),
@@ -403,7 +403,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                       ],
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Container(
                         width: 407.8,
                         height: 646.2,
@@ -414,7 +414,7 @@ class _DClubProfileUserViewWidgetState extends State<DClubProfileUserViewWidget>
                         child: wrapWithModel(
                           model: _model.listclubsModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: ListclubsWidget(),
+                          child: const ListclubsWidget(),
                         ),
                       ),
                     ),

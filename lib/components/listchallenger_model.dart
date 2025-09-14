@@ -25,7 +25,9 @@ class ListchallengerModel extends FlutterFlowModel<ListchallengerWidget> {
 
   @override
   void dispose() {
-    listViewStreamSubscriptions.forEach((s) => s?.cancel());
+    for (var s in listViewStreamSubscriptions) {
+      s?.cancel();
+    }
     listViewPagingController?.dispose();
   }
 

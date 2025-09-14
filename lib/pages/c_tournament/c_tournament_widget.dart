@@ -117,9 +117,9 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
           title: wrapWithModel(
             model: _model.headerModel,
             updateCallback: () => safeSetState(() {}),
-            child: HeaderWidget(),
+            child: const HeaderWidget(),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -132,7 +132,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                     Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 1072.5,
                             height: 733.5,
@@ -145,7 +145,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                 Column(
                                   children: [
                                     Align(
-                                      alignment: Alignment(0.0, 0),
+                                      alignment: const Alignment(0.0, 0),
                                       child: TabBar(
                                         labelColor: FlutterFlowTheme.of(context)
                                             .primaryText,
@@ -202,7 +202,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                         indicatorColor:
                                             FlutterFlowTheme.of(context)
                                                 .primary,
-                                        tabs: [
+                                        tabs: const [
                                           Tab(
                                             text: 'Mở rộng ',
                                           ),
@@ -239,13 +239,13 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
                                                       child:
-                                                          ThongtingiaidauWidget(),
+                                                          const ThongtingiaidauWidget(),
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.01),
                                                 child: Container(
                                                   width: 393.3,
@@ -259,7 +259,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 1.0),
                                                         child: Container(
                                                           width: 358.9,
@@ -282,7 +282,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ClbavatarWidget(),
+                                                                    const ClbavatarWidget(),
                                                               ),
                                                             ],
                                                           ),
@@ -292,7 +292,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.99, 1.0),
                                                             child: Container(
                                                               width: 70.1,
@@ -311,7 +311,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ActionbuttonInteractiveWidget(),
+                                                                    const ActionbuttonInteractiveWidget(),
                                                               ),
                                                             ),
                                                           ),
@@ -332,12 +332,12 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ActionbutonTournamentWidget(),
+                                                                  const ActionbutonTournamentWidget(),
                                                             ),
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.56,
                                                                     0.55),
                                                             child: Container(
@@ -351,7 +351,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -384,7 +384,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.63,
                                                                     0.99),
                                                             child: Container(
@@ -452,13 +452,13 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
                                                       child:
-                                                          ThongtingiaidauWidget(),
+                                                          const ThongtingiaidauWidget(),
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.01),
                                                 child: Container(
                                                   width: 393.3,
@@ -472,7 +472,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 1.0),
                                                         child: Container(
                                                           width: 358.9,
@@ -495,7 +495,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ClbavatarWidget(),
+                                                                    const ClbavatarWidget(),
                                                               ),
                                                             ],
                                                           ),
@@ -505,7 +505,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.99, 1.0),
                                                             child: Container(
                                                               width: 70.1,
@@ -524,7 +524,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                     safeSetState(
                                                                         () {}),
                                                                 child:
-                                                                    ActionbuttonInteractiveWidget(),
+                                                                    const ActionbuttonInteractiveWidget(),
                                                               ),
                                                             ),
                                                           ),
@@ -545,12 +545,12 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                                   safeSetState(
                                                                       () {}),
                                                               child:
-                                                                  ActionbutonTournamentWidget(),
+                                                                  const ActionbutonTournamentWidget(),
                                                             ),
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.56,
                                                                     0.55),
                                                             child: Container(
@@ -564,7 +564,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Text(
@@ -597,7 +597,7 @@ class _CTournamentWidgetState extends State<CTournamentWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -0.63,
                                                                     0.99),
                                                             child: Container(

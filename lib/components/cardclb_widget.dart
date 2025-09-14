@@ -43,7 +43,7 @@ class _CardclbWidgetState extends State<CardclbWidget> {
       mainAxisSize: MainAxisSize.max,
       children: [
         Padding(
-          padding: EdgeInsets.all(6.0),
+          padding: const EdgeInsets.all(6.0),
           child: Container(
             width: 400.4,
             height: 303.73,
@@ -54,7 +54,7 @@ class _CardclbWidgetState extends State<CardclbWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0.04, -0.05),
+                  alignment: const AlignmentDirectional(0.04, -0.05),
                   child: Container(
                     width: 230.0,
                     height: 230.0,
@@ -73,18 +73,18 @@ class _CardclbWidgetState extends State<CardclbWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Container(
                     width: 259.6,
                     height: 30.67,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                     ),
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Padding(
-                        padding: EdgeInsets.all(6.0),
+                        padding: const EdgeInsets.all(6.0),
                         child: Text(
                           'SABO Billiards',
                           textAlign: TextAlign.center,
@@ -120,13 +120,13 @@ class _CardclbWidgetState extends State<CardclbWidget> {
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Align(
+                        const Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             Icons.location_on,
@@ -135,7 +135,7 @@ class _CardclbWidgetState extends State<CardclbWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             '60A Nguyễn An Ninh - TP Vũng Tàu',
                             style:
@@ -157,7 +157,7 @@ class _CardclbWidgetState extends State<CardclbWidget> {
                                     ),
                           ),
                         ),
-                      ].divide(SizedBox(width: 8.0)),
+                      ].divide(const SizedBox(width: 8.0)),
                     ),
                   ),
                 ),

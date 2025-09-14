@@ -52,7 +52,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                   fontStyle:
                       FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                 ),
-                color: Color(0xFF8B5CF6),
+                color: const Color(0xFF8B5CF6),
                 fontSize: 24.0,
                 letterSpacing: 0.0,
                 fontWeight: FontWeight.w800,

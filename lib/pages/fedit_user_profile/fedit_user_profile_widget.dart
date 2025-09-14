@@ -67,9 +67,9 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -108,7 +108,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                           .fontStyle,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 12.0)),
+                            ].divide(const SizedBox(width: 12.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -146,7 +146,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -275,7 +275,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
                               Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -299,16 +299,16 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: 80.0,
                                             height: 80.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0x66000000),
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.camera_alt,
@@ -350,9 +350,9 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                   .fontStyle,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 8.0)),
+                                ].divide(const SizedBox(height: 8.0)),
                               ),
-                            ].divide(SizedBox(width: 32.0)),
+                            ].divide(const SizedBox(width: 32.0)),
                           ),
                           Column(
                             mainAxisSize: MainAxisSize.max,
@@ -365,7 +365,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -465,13 +465,13 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height:
                                                             MediaQuery.sizeOf(
                                                                         context)
                                                                     .height *
                                                                 0.9,
-                                                        child: EditNameWidget(),
+                                                        child: const EditNameWidget(),
                                                       ),
                                                     ),
                                                   );
@@ -487,7 +487,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                               size: 20.0,
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -501,7 +501,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -603,14 +603,14 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: Container(
+                                                      child: SizedBox(
                                                         height:
                                                             MediaQuery.sizeOf(
                                                                         context)
                                                                     .height *
                                                                 0.9,
                                                         child:
-                                                            EditUserNameWidget(),
+                                                            const EditUserNameWidget(),
                                                       ),
                                                     ),
                                                   );
@@ -626,7 +626,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                               size: 20.0,
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -640,7 +640,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -717,7 +717,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                 .secondaryText,
                                             size: 16.0,
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -731,7 +731,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -808,7 +808,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                 .secondaryText,
                                             size: 20.0,
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -822,7 +822,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -899,7 +899,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                 .secondaryText,
                                             size: 20.0,
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -913,7 +913,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -990,7 +990,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                 .secondaryText,
                                             size: 20.0,
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
@@ -1004,7 +1004,7 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                       .secondaryBackground,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1081,15 +1081,15 @@ class _FeditUserProfileWidgetState extends State<FeditUserProfileWidget> {
                                                 .secondaryText,
                                             size: 20.0,
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                     ],
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 16.0)),
+                            ].divide(const SizedBox(height: 16.0)),
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                   ),

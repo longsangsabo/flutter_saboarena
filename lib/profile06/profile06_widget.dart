@@ -78,7 +78,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                   fontStyle: FlutterFlowTheme.of(context).bodyLarge.fontStyle,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -89,12 +89,12 @@ class _Profile06WidgetState extends State<Profile06Widget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 3.0,
                         color: Color(0x33000000),
@@ -106,7 +106,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     ],
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -122,12 +122,12 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(2.0),
+                            padding: const EdgeInsets.all(2.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(50.0),
                               child: CachedNetworkImage(
-                                fadeInDuration: Duration(milliseconds: 500),
-                                fadeOutDuration: Duration(milliseconds: 500),
+                                fadeInDuration: const Duration(milliseconds: 500),
+                                fadeOutDuration: const Duration(milliseconds: 500),
                                 imageUrl:
                                     'https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
                                 width: 60.0,
@@ -138,7 +138,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -168,7 +168,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   'joy@augustin.com',
@@ -204,7 +204,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Text(
                   'Account',
                   style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -224,13 +224,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -244,7 +244,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -255,7 +255,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Payment Options',
@@ -282,7 +282,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -295,13 +295,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -315,7 +315,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -326,7 +326,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Country',
@@ -353,7 +353,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -366,13 +366,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -386,7 +386,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -397,7 +397,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Notification Settings',
@@ -424,7 +424,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -437,13 +437,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -457,7 +457,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -468,7 +468,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Edit Profile',
@@ -495,7 +495,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -508,7 +508,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Text(
                   'General',
                   style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -528,13 +528,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -548,7 +548,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -559,7 +559,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Support',
@@ -586,7 +586,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -599,13 +599,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -619,7 +619,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -630,7 +630,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Terms of Service',
@@ -657,7 +657,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.9, 0.0),
+                          alignment: const AlignmentDirectional(0.9, 0.0),
                           child: Icon(
                             Icons.arrow_forward_ios,
                             color: FlutterFlowTheme.of(context).secondaryText,
@@ -670,13 +670,13 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 5.0,
                         color: Color(0x3416202A),
@@ -690,7 +690,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -701,7 +701,7 @@ class _Profile06WidgetState extends State<Profile06Widget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Invite Friends',

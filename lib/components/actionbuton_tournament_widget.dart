@@ -79,7 +79,7 @@ class _ActionbutonTournamentWidgetState
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
                   ),
-                ].divide(SizedBox(height: 5.0)),
+                ].divide(const SizedBox(height: 5.0)),
               ),
             ),
             SingleChildScrollView(
@@ -113,10 +113,10 @@ class _ActionbutonTournamentWidgetState
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
                   ),
-                ].divide(SizedBox(height: 5.0)),
+                ].divide(const SizedBox(height: 5.0)),
               ),
             ),
-          ].divide(SizedBox(height: 10.0)),
+          ].divide(const SizedBox(height: 10.0)),
         ),
       ),
     );

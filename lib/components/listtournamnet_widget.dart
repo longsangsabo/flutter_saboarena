@@ -16,7 +16,7 @@ class ListtournamnetWidget extends StatefulWidget {
     super.key,
     required this.clubid,
     String? status,
-  }) : this.status = status ?? 'upcoming, ongoing, finished';
+  }) : status = status ?? 'upcoming, ongoing, finished';
 
   final String? clubid;
   final String status;
@@ -61,18 +61,18 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                   TournamentsRecord.collection
                       .where(
                         'club_id',
-                        isEqualTo: widget!.clubid != '' ? widget!.clubid : null,
+                        isEqualTo: widget.clubid != '' ? widget.clubid : null,
                       )
                       .where(
                         'status',
-                        isEqualTo: widget!.status != '' ? widget!.status : null,
+                        isEqualTo: widget.status != '' ? widget.status : null,
                       )
                       .orderBy('start_time'),
                 ),
                 padding: EdgeInsets.zero,
                 reverse: false,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                 builderDelegate: PagedChildBuilderDelegate<TournamentsRecord>(
                   // Customize what your widget looks like when it's loading the first page.
                   firstPageProgressIndicatorBuilder: (_) => Center(
@@ -114,7 +114,7 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -135,9 +135,9 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       '8',
                                       style: FlutterFlowTheme.of(context)
@@ -236,7 +236,7 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 4.0)),
+                                        ].divide(const SizedBox(width: 4.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -280,7 +280,7 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 4.0)),
+                                        ].divide(const SizedBox(width: 4.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -324,11 +324,11 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                                           .fontStyle,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 4.0)),
+                                        ].divide(const SizedBox(width: 4.0)),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
-                                ].divide(SizedBox(height: 4.0)),
+                                ].divide(const SizedBox(height: 4.0)),
                               ),
                             ),
                             Column(
@@ -395,7 +395,7 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                     borderRadius: BorderRadius.circular(6.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Icon(
                                       Icons.menu,
                                       color: FlutterFlowTheme.of(context)
@@ -404,9 +404,9 @@ class _ListtournamnetWidgetState extends State<ListtournamnetWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 8.0)),
+                              ].divide(const SizedBox(height: 8.0)),
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(const SizedBox(width: 16.0)),
                         ),
                       ),
                     );

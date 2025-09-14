@@ -83,13 +83,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : AAuthPageWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : const AAuthPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : AAuthPageWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : const AAuthPageWidget(),
         ),
         FFRoute(
             name: EUserProfileWidget.routeName,
@@ -98,7 +98,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ? NavBarPage(initialPage: 'eUserProfile')
                 : NavBarPage(
                     initialPage: 'eUserProfile',
-                    page: EUserProfileWidget(),
+                    page: const EUserProfileWidget(),
                   )),
         FFRoute(
             name: AHomeWidget.routeName,
@@ -107,7 +107,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ? NavBarPage(initialPage: 'aHome')
                 : NavBarPage(
                     initialPage: 'aHome',
-                    page: AHomeWidget(),
+                    page: const AHomeWidget(),
                   )),
         FFRoute(
             name: BChallengerWidget.routeName,
@@ -116,7 +116,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ? NavBarPage(initialPage: 'bChallenger')
                 : NavBarPage(
                     initialPage: 'bChallenger',
-                    page: BChallengerWidget(),
+                    page: const BChallengerWidget(),
                   )),
         FFRoute(
             name: CTournamentWidget.routeName,
@@ -125,24 +125,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ? NavBarPage(initialPage: 'cTournament')
                 : NavBarPage(
                     initialPage: 'cTournament',
-                    page: CTournamentWidget(),
+                    page: const CTournamentWidget(),
                   )),
         FFRoute(
           name: ZroleClubProfileWidget.routeName,
           path: ZroleClubProfileWidget.routePath,
-          builder: (context, params) => ZroleClubProfileWidget(),
+          builder: (context, params) => const ZroleClubProfileWidget(),
         ),
         FFRoute(
           name: DClubProfileUserViewWidget.routeName,
           path: DClubProfileUserViewWidget.routePath,
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'dClubProfileUserView')
-              : DClubProfileUserViewWidget(),
+              : const DClubProfileUserViewWidget(),
         ),
         FFRoute(
           name: AAuthPageWidget.routeName,
           path: AAuthPageWidget.routePath,
-          builder: (context, params) => AAuthPageWidget(),
+          builder: (context, params) => const AAuthPageWidget(),
         ),
         FFRoute(
           name: FeditUserProfileWidget.routeName,
@@ -159,12 +159,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: Profile06Widget.routeName,
           path: Profile06Widget.routePath,
-          builder: (context, params) => Profile06Widget(),
+          builder: (context, params) => const Profile06Widget(),
         ),
         FFRoute(
           name: Profile16CreateEditWidget.routeName,
           path: Profile16CreateEditWidget.routePath,
-          builder: (context, params) => Profile16CreateEditWidget(),
+          builder: (context, params) => const Profile16CreateEditWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -402,7 +402,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

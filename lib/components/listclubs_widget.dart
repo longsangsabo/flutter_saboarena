@@ -16,7 +16,7 @@ class ListclubsWidget extends StatefulWidget {
   const ListclubsWidget({
     super.key,
     String? status,
-  }) : this.status = status ?? 'active';
+  }) : status = status ?? 'active';
 
   final String status;
 
@@ -59,13 +59,13 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                 pagingController: _model.setListViewController(
                   ClubsRecord.collection.where(
                     'status',
-                    isEqualTo: widget!.status != '' ? widget!.status : null,
+                    isEqualTo: widget.status != '' ? widget.status : null,
                   ),
                 ),
                 padding: EdgeInsets.zero,
                 reverse: false,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (_, __) => SizedBox(height: 6.0),
+                separatorBuilder: (_, __) => const SizedBox(height: 6.0),
                 builderDelegate: PagedChildBuilderDelegate<ClubsRecord>(
                   // Customize what your widget looks like when it's loading the first page.
                   firstPageProgressIndicatorBuilder: (_) => Center(
@@ -96,7 +96,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                     final listViewClubsRecord = _model
                         .listViewPagingController!.itemList![listViewIndex];
                     return Padding(
-                      padding: EdgeInsets.all(4.0),
+                      padding: const EdgeInsets.all(4.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -106,7 +106,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                           context.pushNamed(
                             EUserProfileWidget.routeName,
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                               ),
@@ -116,7 +116,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                         child: Container(
                           width: double.infinity,
                           height: 118.44,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
@@ -125,9 +125,9 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 16.0, 12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -136,14 +136,14 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                   width: 100.0,
                                   height: 100.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0x4D9489F5),
+                                    color: const Color(0x4D9489F5),
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFF6F61EF),
+                                      color: const Color(0xFF6F61EF),
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(2.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10.0),
                                       child: Image.network(
@@ -157,7 +157,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -180,7 +180,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                                           .bodyLarge
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF15161E),
+                                                color: const Color(0xFF15161E),
                                                 fontSize: 20.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -192,12 +192,12 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Padding(
+                                              const Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 4.0, 0.0),
@@ -208,7 +208,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 16.0, 0.0),
                                                 child: Text(
@@ -228,7 +228,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            Color(0xFF606A85),
+                                                            const Color(0xFF606A85),
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -248,7 +248,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsets.all(4.0),
+                                              padding: const EdgeInsets.all(4.0),
                                               child: FFButtonWidget(
                                                 onPressed: () {
                                                   print('Button pressed ...');
@@ -256,14 +256,14 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                                 text: 'Tham gia',
                                                 options: FFButtonOptions(
                                                   height: 30.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0xFF0E4C43),
+                                                  color: const Color(0xFF0E4C43),
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .titleSmall
@@ -297,10 +297,10 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                             ),
                                             Flexible(
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(4.0),
+                                                  padding: const EdgeInsets.all(4.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () {
                                                       print(
@@ -310,20 +310,20 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                                     options: FFButtonOptions(
                                                       height: 30.0,
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
                                                                   16.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color: Color(0xFF95262D),
+                                                      color: const Color(0xFF95262D),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -362,7 +362,7 @@ class _ListclubsWidgetState extends State<ListclubsWidget> {
                                             ),
                                           ],
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                   ),
                                 ),

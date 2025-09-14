@@ -6,15 +6,9 @@ import '/components/listclubs_widget.dart';
 import '/components/listleaderboard_widget.dart';
 import '/components/listmenber_widget.dart';
 import '/components/listtournamnet_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'd_club_profile_user_view_widget.dart' show DClubProfileUserViewWidget;
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class DClubProfileUserViewModel
     extends FlutterFlowModel<DClubProfileUserViewWidget> {
