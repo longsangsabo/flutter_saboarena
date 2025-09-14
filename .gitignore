@@ -42,7 +42,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Firebase
+# Firebase & Supabase
 **/google-services.json
 **/GoogleService-Info.plist
 firebase/functions/node_modules/
@@ -50,6 +50,11 @@ firebase/functions/.env
 .env
 .env.local
 .env.production
+
+# Supabase
+supabase/.env
+supabase/.env.local
+supabase/.env.production
 
 # iOS
 **/ios/Pods/
