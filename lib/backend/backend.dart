@@ -5,6 +5,9 @@ import '../auth/firebase_auth/auth_util.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'schema/util/firestore_util.dart';
 
+// Import Firebase compatibility layer for gradual migration
+import 'firebase_compatibility.dart';
+
 import 'schema/users_record.dart';
 import 'schema/matches_record.dart';
 import 'schema/clubs_record.dart';

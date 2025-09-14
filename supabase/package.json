@@ -1,0 +1,23 @@
+{
+  "name": "sabo-arena-supabase-migrations",
+  "version": "1.0.0",
+  "description": "Database migrations for Sabo Arena billiards app",
+  "main": "run_migration_db.js",
+  "scripts": {
+    "migrate": "node run_migration_db.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3"
+  },
+  "keywords": [
+    "supabase",
+    "postgresql",
+    "migration",
+    "billiards"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT"
+}

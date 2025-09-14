@@ -48,6 +48,25 @@ app.*.map.json
 firebase/functions/node_modules/
 firebase/functions/.env
 .env
+
+# Node modules
+node_modules/
+supabase/node_modules/
+
+# Dependencies
+package-lock.json
+supabase/package-lock.json
+
+# Environment files
+supabase/.env
+
+# Database
+*.sqlite
+*.db
+
+# Temporary files
+*.tmp
+*.temp
 .env.local
 .env.production
 
