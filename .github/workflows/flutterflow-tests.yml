@@ -1,0 +1,47 @@
+name: FlutterFlow Integration Tests
+
+# Trigger workflow on push to main or pull requests
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    name: Run FlutterFlow Integration Tests
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.27.3'
+        
+    - name: Get Dependencies
+      run: flutter pub get
+      
+    - name: Run FlutterFlow Integration Tests
+      uses: FlutterFlow/build-and-run-integration-tests-for-flutterflow-web-app@v1
+      # This action will:
+      # - Build the FlutterFlow web app
+      # - Run integration tests automatically
+      # - Test on Chrome browser
+      # - Generate test reports
+      
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results
+        path: test-results/
+        
+    - name: Upload Screenshots
+      uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: failure-screenshots
+        path: test/screenshots/
